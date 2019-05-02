@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Example Login Screen with React Native",
-    "slug": "example-login-screen-with-react-native",
+    "name": "Example Login Screen with React Native - Onbbi",
+    "slug": "example-login-screen-with-react-native-onbbi",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Login screen for Android and iOS using React Native. The layout was inspired by Onbbi v9 Tomer.",
+    "githubUrl": "https://github.com/gustafsilva/example-login-screen-with-react-native"
   }
 }
