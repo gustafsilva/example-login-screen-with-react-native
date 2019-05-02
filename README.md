@@ -5,7 +5,7 @@ Login screen for Android and iOS using React Native. The layout was inspired by 
 ![Example Login Screen With React Native Screenshot](./assets/images/screenshot.jpg)
 
 You can view the App also by **Expo**.
-Just download the **Expo** application on your cell phone, [click here](https://expo.io/) and scan the QRCode of the open page in your downloaded application.
+Just download the **Expo** application on your cell phone, [click here](https://expo.io/@gustafsilva/example-login-screen-with-react-native-onbbi) and scan the QRCode of the open page in your downloaded application.
 
 ## Getting Started :+1:
 First we'll clone the project:
@@ -23,6 +23,9 @@ $ npm start
 A screen in your browser will open, you can open the App in an android or ios emulator.
 Or scan the QR Code using the Expo Application directly on your celebrular.
 
+## Dependencies
+- [node](https://nodejs.org/en/)
+- [expo-cli](https://expo.io/learn)
 ## Main Available Scripts :fire:
 
 In the project directory, you can run:
