@@ -6,7 +6,7 @@ import {
   Logo,
   Image,
   InputBox,
-  RightIconInput
+  RightIconInput,
 } from './styled';
 import Box from '../../components/Box';
 import Button from '../../components/Button';
@@ -18,7 +18,19 @@ class LoginScreen extends Component {
   state = {
     /** Flag that indicates whether image should. */
     imageShow: true,
+    username: '',
+    password: '',
   };
+
+  componentWillUnmount() {
+    if (this.timoutImageShow !== undefined) {
+      this.timoutImageShow = null;
+    }
+  }
+
+  changeUsername = username => this.setState({ username });
+
+  changePassword = password => this.setState({ password });
 
   disableImage = () => {
     if (this.timoutImageShow !== undefined) {
@@ -32,11 +44,15 @@ class LoginScreen extends Component {
     this.timoutImageShow = setTimeout(() => this.setState({ imageShow: true }), timeoutShow);
   };
 
-  // eslint-disable-next-line no-console
-  continue = () => console.log('Continue login...');
+  continue = () => {
+    const { username, password } = this.state;
+
+    // eslint-disable-next-line no-console
+    console.log(`username: ${username} password: ${password}`);
+  };
 
   render() {
-    const { imageShow } = this.state;
+    const { imageShow, username, password } = this.state;
 
     return (
       <Container behavior="padding">
@@ -50,12 +66,17 @@ class LoginScreen extends Component {
               placeholder="User Name"
               onFocus={this.disableImage}
               onEndEditing={this.enableImage}
+              value={username}
+              onChangeText={this.changeUsername}
             />
             <Input
               placeholder="Password"
               rightIcon={<RightIconInput>Help</RightIconInput>}
               onFocus={this.disableImage}
               onEndEditing={this.enableImage}
+              value={password}
+              onChangeText={this.changePassword}
+              secureTextEntry
             />
           </InputBox>
 
