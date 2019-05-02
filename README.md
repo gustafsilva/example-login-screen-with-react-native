@@ -1,14 +1,11 @@
 # Example Login Screen with React Native
 
-Login screen for Android and iOS using React Native. The layout was inspired by [Onbbi v9 Tomer]().
+Login screen for Android and iOS using React Native. The layout was inspired by [Onbbi v9 Tomer](https://www.sketchappsources.com/free-source/3909-concept-game-app-sketch-freebie-resource.html).
 
-<img
-  src="./assets/images/screenshot.png"
-  style="height: 400px;"
-/>
+![Example Login Screen With React Native Screenshot](./assets/images/screenshot.jpg)
 
 You can view the App also by **Expo**.
-Just download the **Expo** application on your cell phone, [click here]() and scan the QRCode of the open page in your downloaded application.
+Just download the **Expo** application on your cell phone, [click here](https://expo.io/) and scan the QRCode of the open page in your downloaded application.
 
 ## Getting Started :+1:
 First we'll clone the project:
